@@ -1,4 +1,4 @@
-*{
+* {
     font-family: "Segoe UI", sans-serif;
 }
 
@@ -143,7 +143,7 @@ header {
         text-align: center;
     }
 
-    .colab-items{
+    .colab-items {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -156,4 +156,85 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Tablety */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        justify-content: center;
+    }
+
+    .headline {
+        font-size: 60px;
+    }
+
+    .section-partners .container img {
+        display: none;
+    }
+
+    .section-partners .container img:nth-child(odd) {
+        display: block;
+
+    }
+
+    .cola-1 {
+        transform: scale(70%);
+        padding-right: -80px;
+    }
+
+    .cola-3 {
+        transform: scale(200%);
+    }
+
+    .cola-5 {
+        transform: scale(200%);
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Mobily */
+@media (max-width: 768px) {
+
+    .container {
+        justify-content: center;
+    }
+}
+
+nav {
+
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.headline {
+    width: 55% !important;
+    margin-top: 20px;
+    font-size: 2.5rem !important;
+}
+
+.left-nav {
+    margin-bottom: 16px;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.section-partners .container img:first-child {
+    display: block;
+    width: 30%;
+}
+
+.section-partners .container img {
+    display: none;
+}
+
+
+.section-colab h1 {
+    font-size: 35px !important;
 }
